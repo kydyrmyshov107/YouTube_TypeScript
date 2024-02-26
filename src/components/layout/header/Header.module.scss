@@ -1,0 +1,110 @@
+.Header {
+  background: #000000;
+  // border-top: 1px white;
+  // position: fixed;
+  // width: 100%;
+  // top: 0;
+  // left: 0;
+  // background-image: linear-gradient(
+  //   90deg,
+  //   #000000 10%,
+  //   #858585 50%,
+  //   #ffffff 100%
+  // );
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid;
+    padding-block: 10px;
+    height: 80px;
+
+    // width: 100%;
+    img {
+      width: 200px;
+      padding: 13px;
+      &:hover {
+        filter: grayscale(100%);
+      }
+    }
+
+    .conDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+    }
+
+    .input {
+      // max-width: 190px;
+      width: 400px;
+
+      height: 100%;
+      outline: none;
+      font-size: 14px;
+      font-weight: 500;
+      background-color: #53535f;
+      caret-color: #f7f7f8;
+      color: #fff;
+      padding: 7px 10px;
+      border: 2px solid transparent;
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+      margin-right: 1px;
+      transition: all 0.2s ease;
+    }
+
+    .input:hover {
+      border: 2px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .input:focus {
+      border: 2px solid #a970ff;
+      background-color: #0e0e10;
+    }
+
+    .search__btn {
+      border: none;
+      cursor: pointer;
+      background-color: rgba(42, 42, 45, 1);
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      height: 100%;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search__btn:hover {
+      background-color: rgba(54, 54, 56, 1);
+    }
+    .logoTwo {
+      img {
+        padding: 15px;
+        width: 110px;
+        height: 120px;
+        &:hover {
+          filter: grayscale(100%);
+        }
+      }
+    }
+    .logo {
+      img {
+        padding: 10px;
+        width: 110px;
+        height: 120px;
+        &:hover {
+          filter: grayscale(100%);
+        }
+      }
+    }
+    .message {
+      img {
+        padding: 80px 0;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}

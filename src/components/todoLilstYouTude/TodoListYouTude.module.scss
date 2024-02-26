@@ -1,0 +1,116 @@
+.TodoListYouTude {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  // background: #000;
+  .modal {
+    iframe {
+      // width: 300px;
+      padding: 100px;
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 15px;
+
+    select {
+      padding: 12px 17px;
+      border-radius: 30px;
+      border: none;
+      option {
+        background: #a4daf9;
+      }
+    }
+    // background: white;
+    input {
+      border: none;
+      outline: none;
+      border-radius: 15px;
+      padding: 12px 25px;
+      // padding: 1em;
+      background-color: #ccc;
+      box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: 300ms ease-in-out;
+
+      &:hover {
+        border: 2px solid white;
+      }
+    }
+    input:focus {
+      background-color: white;
+      transform: scale(1.05);
+      box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
+    }
+  }
+  .aside {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    button {
+      // width: fit-content;
+      // min-width: 100px;
+      width: 70px;
+      height: 30px;
+      border: none;
+      // padding: 8px;
+      border-radius: 5px;
+      border: 1.8px solid #e0e1e4;
+      box-shadow: 0px 0px 20px -20px;
+      cursor: pointer;
+      background-color: white;
+      transition: all 0.2s ease-in-out 0ms;
+      user-select: none;
+      font-family: "Montserrat", sans-serif;
+      &:hover {
+        background-color: #f2f2f2;
+        box-shadow: 0px 0px 20px -18px;
+      }
+      &:active {
+        box-shadow: inset 0px 0.1em 0.6em #a4daf9;
+        transform: translateY(0em);
+      }
+    }
+    .edits {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid white;
+      border-radius: 30px;
+
+      input {
+        width: 100%;
+        max-width: 200px;
+        height: 45px;
+        padding: 12px;
+        border-radius: 12px;
+        border: 1.5px solid lightgrey;
+        outline: none;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        box-shadow: 0px 0px 20px -18px;
+      }
+
+      input:hover {
+        border: 2px solid lightgrey;
+        box-shadow: 0px 0px 20px -17px;
+      }
+
+      input:active {
+        transform: scale(0.95);
+      }
+
+      input:focus {
+        border: 2px solid grey;
+      }
+    }
+  }
+
+  .card {
+    img {
+      width: 400px;
+    }
+  }
+}
